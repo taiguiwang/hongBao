@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>定时领红包</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="img/png" href="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2310494756,1110146895&fm=11&gp=0.jpg">
+</head>
+
+<body style="margin-right: 0px; transition: all 0.25s ease-in 0s;">
+    <p id="baiNian" class="HB" style="display: inline;">过年啦！<a class="djs HD">点击领红包！</a></p>
+
+    <div class="hongBao" style="display: none;">
+        <svg width="400" height="400">
+            <rect x="0" y="50" rx="20" ry="20" width="150" height="200" id="zheng" fill='red'/>
+            <text x="55" y="170" font-size="40" font-weight="600" opacity=0.5 fill="Darkorange">福</text>
+            <circle id="yuan" cx="75" cy="100" r="20" stroke-width="4" fill="yellow" />
+            <rect x="66" y="91" rx="1" ry="1" width="18" height="18" id="xiao-zhen" fill='whitesmoke' />
+        </svg>
+    </div>
+
+    <div class="khb" style="display: none; position: relative;">
+        <svg width="400" height="400">
+            <rect x="125" y="50" rx="20" ry="20" width="150" height="200" id="zheng" fill='red' />
+            <circle id="yuan" cx="200" cy="145" r="40" stroke-width="4" fill="yellow" />
+            <rect x="185" y="130" rx="1" width="30" height="30" id="xiao-zhen" fill='whitesmoke' />
+        </svg>
+    </div>
+
+    <div class="up animated" style="width: 100px;height: 30px;display: none;">点 我</div>
+
+</body>
+<script type="text/javascript" src="hongbao.js"></script>
+</html>

@@ -1,0 +1,95 @@
+p {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+body {
+    background-image: url("/assets/beiJingTu.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.djs {
+    color: red;
+    font-size: 30px;
+}
+
+/***************************************/
+
+.xiao-zhen {
+    transform: rotate(45deg);
+}
+
+@keyframes scaleDraw {
+    /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0% {
+        transform: scale(1);
+        /*开始为原始大小*/
+    }
+    25% {
+        transform: scale(1.1);
+        /*放大1.1倍*/
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+.hongBao {
+    cursor: pointer;
+    width: 150px;
+    height: 200px;
+    background: url("images/balloon.png");
+    background-size: 150px 200px;
+    animation-name: scaleDraw;
+    /*关键帧名称*/
+    animation-timing-function: ease-in-out;
+    /*动画的速度曲线*/
+    animation-iteration-count: infinite;
+    /*动画播放的次数*/
+    animation-duration: 5s;
+    /*动画所花费的时间*/
+}
+
+/***************************************/
+
+.animated {
+    animation-iteration-count: infinite;
+    /*动作循环的次数：infinite 无限循环*/
+    animation-duration: 2s;
+    /*动画时间*/
+    animation-name: upAnimation;
+    /*动画的名称*/
+    cursor: pointer;
+}
+
+.up {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    margin: 65px 0 0 50px;
+    font-size: 20px;
+    color: red;
+}
+
+@keyframes upAnimation {
+    0%, 100%, 20%, 50%, 80% {
+        transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+        transform: translate3d(0, -15px, 0);
+    }
+    70% {
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
